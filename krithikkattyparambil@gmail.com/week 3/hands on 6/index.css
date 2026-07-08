@@ -1,0 +1,126 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f8fa;
+  color: #1f2933;
+  line-height: 1.5;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1f3a5f;
+  color: #fff;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.app-header nav ul { list-style: none; display: flex; gap: 1.5rem; }
+.app-header nav a { color: #fff; text-decoration: none; }
+.enrolled-badge { font-size: 0.85rem; background: #16283f; padding: 0.3rem 0.7rem; border-radius: 999px; }
+
+#hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #e8edf5;
+}
+
+#courses { padding: 2.5rem 2rem; }
+#courses h2 { text-align: center; margin-bottom: 1rem; }
+#courses input {
+  display: block;
+  margin: 0 auto 1.5rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #d9dee4;
+  border-radius: 4px;
+  min-width: 260px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.course-card {
+  padding: 1.25rem;
+  border: 1px solid #d9dee4;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.course-card button {
+  display: block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #1f3a5f;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-section {
+  padding: 2.5rem 2rem;
+  background-color: #fff;
+}
+
+.profile-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+}
+
+.profile-section label { display: flex; flex-direction: column; gap: 0.3rem; font-size: 0.9rem; }
+.profile-section input { padding: 0.5rem; border: 1px solid #d9dee4; border-radius: 4px; }
+.profile-section .preview { margin-top: 1rem; color: #52606d; }
+
+.app-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #1f3a5f;
+  color: #fff;
+}
+
+.error { color: #c0392b; text-align: center; }
+
+.enrolled-list {
+  list-style: none;
+  max-width: 500px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.enrolled-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border: 1px solid #d9dee4;
+  border-radius: 6px;
+}
+
+.enrolled-list button {
+  padding: 0.3rem 0.7rem;
+  border: none;
+  background-color: #c0392b;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#course-detail {
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+#profile { padding: 2.5rem 2rem; }
+#profile h3 { text-align: center; margin: 1rem 0; }
