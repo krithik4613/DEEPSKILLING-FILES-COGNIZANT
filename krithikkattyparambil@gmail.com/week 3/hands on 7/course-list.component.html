@@ -1,0 +1,34 @@
+<section id="courses">
+  <h2>Your Courses</h2>
+
+  <input
+    type="text"
+    placeholder="Search courses..."
+    [(ngModel)]="searchTerm"
+    aria-label="Search courses"
+  >
+
+  <p *ngIf="loading" role="status">Loading courses...</p>
+
+  <p
+    *ngIf="!loading && filteredCourses.length === 0"
+    role="status"
+    aria-live="polite"
+  >
+    No courses found
+  </p>
+
+  <p role="status" aria-live="polite" *ngIf="!loading && filteredCourses.length > 0">
+    {{ filteredCourses.length }} courses found
+  </p>
+
+  <div class="course-grid">
+    <app-course-card
+      *ngFor="let course of filteredCourses"
+      [name]="course.name"
+      [code]="course.code"
+      [credits]="course.credits"
+      [grade]="course.grade"
+    ></app-course-card>
+  </div>
+</section>

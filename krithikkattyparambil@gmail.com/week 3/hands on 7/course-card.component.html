@@ -1,0 +1,10 @@
+<article
+  class="course-card"
+  tabindex="0"
+  (keydown.enter)="$event.target.click()"
+>
+  <h3>{{ name }}</h3>
+  <p>{{ code }}</p>
+  <span class="credits">{{ credits }} credits</span>
+  <span class="grade" *ngIf="grade">Grade: {{ grade }}</span>
+</article>
