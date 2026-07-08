@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal | Notifications</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="site-name">Student Portal</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#notifications">Notifications</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Welcome back!</h1>
+      <p>Here's what's new in your courses and notifications.</p>
+    </section>
+
+    <section id="courses">
+      <h2>Your Courses</h2>
+      <div id="courses-status" class="status"></div>
+      <div class="course-grid"></div>
+    </section>
+
+    <section id="notifications">
+      <h2>Notifications</h2>
+      <div id="notif-status" class="status"></div>
+      <div id="notif-error" class="error hidden">
+        <p id="notif-error-message"></p>
+        <button id="retry-btn" type="button">Retry</button>
+      </div>
+      <div class="notif-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Student Portal. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
