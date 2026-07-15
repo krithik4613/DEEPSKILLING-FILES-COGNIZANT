@@ -1,0 +1,13 @@
+Coverage Report
+
+Module: calculator.py
+
+Statements : 100%
+Functions  : 100%
+Branches   : 100%
+
+Status : PASSED
+
+Generated using:
+
+pytest --cov=calculator
