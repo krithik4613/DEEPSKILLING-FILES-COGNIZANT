@@ -1,0 +1,38 @@
+#profile {
+  padding: 2rem;
+  max-width: 400px;
+}
+
+#profile form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#profile input {
+  padding: 0.5rem;
+  border: 1px solid #d9dee4;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+#profile .error {
+  color: #c0392b;
+  font-size: 0.85rem;
+  margin-top: -0.4rem;
+}
+
+#profile button {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  background-color: #1f3a5f;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#profile button:disabled {
+  background-color: #9aa5b1;
+  cursor: not-allowed;
+}
